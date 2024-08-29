@@ -38,30 +38,30 @@
 
 
 body {
-    background-color: var(--bg) !important;
+    background-color: var(--bg);
 }
 
 
 
 .heading1 {
-    color: var(--heading1) !important;
-    font-family:var(--matuma-script) !important;
+    color: var(--heading1);
+    font-family:var(--matuma-script);
 }
 
 .heading2 {
-    color: var(--heading2) !important;
-    font-family:var(--matuma-script) !important;
+    color: var(--heading2);
+    font-family:var(--matuma-script);
 }
 
 
 .p1 {
     color: var(--p1);
-    font-family: 'Juice ITC' !important;
+    font-family: 'Juice ITC';
 }
 
 .p2 {
     color: var(--p2);
-    font-family: 'Juice ITC' !important;
+    font-family: 'Juice ITC';
 }
 
 
