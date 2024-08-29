@@ -1,0 +1,165 @@
+
+:root {
+    --heading1:#ff3d55;
+    --heading2:#0e385e;
+    --surface:#f9d4d4;
+    --p1:#4b4b4b;
+    --p2:#9c9c9c;
+    --bg:#fdfdfd;
+    --matuma-script: 'Matura MT Script Capitals';
+    --davidlibre:'David Libre';
+    --lucida-calligraph:'Lucida Calligraphy';
+
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background:#266d98;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5ac2ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #98d8ec;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --webkit-user-select:none;
+}
+
+
+
+body {
+    background-color: var(--bg);
+}
+
+
+
+.heading1 {
+    color: var(--heading1);
+    font-family:var(--matuma-script);
+}
+
+.heading2 {
+    color: var(--heading2);
+    font-family:var(--matuma-script);
+}
+
+
+.p1 {
+    color: var(--p1);
+    font-family: 'Juice ITC';
+}
+
+.p2 {
+    color: var(--p2);
+    font-family: 'Juice ITC';
+}
+
+
+/* header section */
+
+.header {
+    background: linear-gradient(
+        to right,
+        rgb(0 0 0 / 0),
+        rgb(0 0 0 / 0.5)
+    ),
+    url('images/banners/banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 35% left;
+    background-attachment: fixed; 
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.container, nav {
+    z-index: 10;
+}
+
+
+/* about section */
+
+#about-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bi {
+    color: var(--surface);
+    object-fit: contain;
+    text-shadow: 3px 4px 9px var(--heading2);
+   
+}
+
+img.my-image {
+    object-fit: cover;
+    box-shadow: 3px 4px 12px var(--heading2);
+}
+
+.bi:hover {
+    transition: all 0.3s ease;
+    text-shadow: none;
+}
+
+
+/* skills section */
+#skills {
+    width: 100%;
+}
+.skill-img img {
+    object-fit: contain;
+    width: 8rem;
+    height: 8rem;
+    box-shadow: 3px 4px 5px var(--heading2);
+}
+
+
+/* contact section */
+.bi-pin-map-fill,
+.bi-envelope,
+.bi-plugin,
+.bi-telephone,
+.bi-linkedin {
+    color: var(--heading1);
+    text-shadow: none;
+}
+
+
+
+/* media query for phone(s) */
+@media(max-width:576px){
+  #about-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+  }
+
+  .skill-img img {
+    width: 5rem !important;
+    height: 5rem !important;
+}
+}
